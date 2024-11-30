@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Declare the INTERNET permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Edutech"
+        tools:targetApi="31">
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Edutech">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- EmailActivity -->
+        <activity
+            android:name=".EmailActivity"
+            android:exported="true"
+            android:label="Email Screen"
+            android:theme="@style/Theme.Edutech" />
+
+        <!-- UserCreationActivity declaration -->
+        <activity
+            android:name=".AccountActivity"
+            android:exported="true"
+            android:label="User Creation"
+            android:theme="@style/Theme.Edutech" />
+
+        <!-- PasswordCreationActivity declaration -->
+        <activity
+            android:name=".PasswordCreationActivity"
+            android:exported="true"
+            android:label="Password Creation"
+            android:theme="@style/Theme.Edutech" />
+
+        <!-- OTP declaration -->
+        <activity
+            android:name=".OtpActivity"
+            android:exported="true"
+            android:label="Otp"
+            android:theme="@style/Theme.Edutech" />
+
+        <!-- Verify declaration -->
+        <activity
+            android:name=".VerifiedActivity"
+            android:exported="true"
+            android:label="Account verification"
+            android:theme="@style/Theme.Edutech" />
+
+        <!-- Announcement declaration -->
+        <activity
+            android:name=".AnnouncementActivity"
+            android:exported="true"
+            android:label="Account verification"
+            android:theme="@style/Theme.Edutech" />
+
+        <!-- HomeScreen declaration -->
+        <activity
+            android:name=".HomeScreenActivity"
+            android:exported="true"
+            android:label="Account verification"
+            android:theme="@style/Theme.Edutech" />
+
+        <!-- Learning covered declaration -->
+        <activity
+            android:name=".LearningCoveredActivity"
+            android:exported="true"
+            android:label="Account verification"
+            android:theme="@style/Theme.Edutech" />
+    </application>
+
+</manifest>
